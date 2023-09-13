@@ -41,6 +41,7 @@ def main():
     # Print the results
     print("Sum: " + str(sum(integer_list)))
     print("Product: " + str(product(integer_list)))
+    print("Reverse: " + str(reverse_array(integer_list)))
 
 
 if __name__ == "__main__":
