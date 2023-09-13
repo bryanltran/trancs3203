@@ -13,3 +13,33 @@ def product(arr):
         product = product * i
 
     return(product)
+
+
+def main():
+    # Initialize an empty list to store the integers
+    integer_list = []
+
+    while True:
+        try:
+            # Read an integer from the user
+            user_input = input("Enter an integer (or -1 to stop): ")
+
+            # Convert the input to an integer
+            num = int(user_input)
+
+            # Check if the user wants to stop
+            if num == -1:
+                break
+
+            # Append the integer to the list
+            integer_list.append(num)
+        except ValueError:
+            print("Invalid input. Please enter a valid integer or -1 to stop.")
+
+    # Print the results
+    print("Sum: " + str(sum(integer_list)))
+    print("Product: " + str(product(integer_list)))
+
+
+if __name__ == "__main__":
+    main()
